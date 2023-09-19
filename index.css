@@ -1,0 +1,65 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display:flex; 
+    
+    padding: 10px;
+    border: 2px solid #0a0909;
+}
+
+.nav-item{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.dialog{
+    display: none;
+    position: absolute;
+    border: 2px solid #555;
+    padding: 20px;
+    
+}
+
+.dialog-item{
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.nav-item:hover .dialog, .dialog-item:hover .sub-dialog , .sub-dialog-item:hover .replace-dialog{
+    display: block;
+}
+
+.sub-dialog{
+    display: none;
+    position: absolute;
+    border: 2px solid #555;
+    padding: 20px;
+}
+
+.sub-dialog-item{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.sub-dialog-item:hover{
+    background-color: #fff;
+}
+
+.replace-dialog{
+    display: none;
+    position: absolute;
+    border: 2px solid #555;
+    padding: 20px;    
+}
+
+.replace-dialog-item{
+    padding: 20px;
+    cursor: pointer;
+}
